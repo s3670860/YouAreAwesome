@@ -8,12 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var stringyMcTextFace = ""
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image(systemName: "swift")
+                .resizable()
+                .scaledToFit()
+            //                .imageScale(.large)
+                .foregroundStyle(.purple)
+                .padding(.trailing, 30.0)
+                .padding(.bottom, 100)
+                .background(.orange)
+            
+            Text(stringyMcTextFace)
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .foregroundColor(.red)
+                .italic()
+                .padding()
+//                .background(.black)
+            
+            HStack {
+                Button("Awesome") {
+    //                // This is the action performed when the button is pressed
+                    stringyMcTextFace = "You Are Awesome!"
+                }
+                .buttonStyle(.borderedProminent)
+                Button("Great") {
+    //                // This is the action performed when the button is pressed
+                    stringyMcTextFace = "You Are Great!"
+                }
+                .buttonStyle(.borderedProminent)
+                Button ("Greater"){
+                    stringyMcTextFace = "You Are The Greatest!"
+                }
+                .buttonStyle(.borderedProminent)
+                Button("Best") {
+                    stringyMcTextFace = "You Are The Best!"
+                }
+                .buttonStyle(.bordered)
+            }
+            
+
         }
         .padding()
     }
