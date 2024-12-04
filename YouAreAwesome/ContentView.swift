@@ -12,14 +12,14 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Image(systemName: "swift")
+            Image(systemName: "2.circle")
                 .resizable()
                 .scaledToFit()
             //                .imageScale(.large)
                 .foregroundStyle(.purple)
                 .padding(.trailing, 30.0)
                 .padding(.bottom, 100)
-                .background(.orange)
+                .background(.green)
             
             Text(stringyMcTextFace)
                 .font(.largeTitle)
