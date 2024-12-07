@@ -12,17 +12,18 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Image(systemName: "3.circle")
+            Image(systemName: "4.circle")
                 .resizable()
                 .scaledToFit()
             //                .imageScale(.large)
-                .foregroundStyle(.red)
-                .padding(.trailing, 30.0)
-                .padding(.bottom, 100)
-                .background(.blue)
+                .foregroundStyle(.purple)
+//                .padding(.trailing, 30.0)
+//                .padding(.bottom, 100)
+//                .background(.blue)
             
             Rectangle()
-                .foregroundColor(.green)
+                .foregroundColor(.purple)
+//                .scaledToFit()
             Text(stringyMcTextFace)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -50,9 +51,9 @@ struct ContentView: View {
                 }
                 .buttonStyle(.bordered)
             }
-            Text("Version 3.0")
+            Text("Version 4.0")
                 .bold()
-                .padding()
+//                .padding()
                 .foregroundColor(.red)
 
         }
