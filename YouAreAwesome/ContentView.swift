@@ -12,14 +12,14 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Image(systemName: "2.circle")
+            Image(systemName: "3.circle")
                 .resizable()
                 .scaledToFit()
             //                .imageScale(.large)
-                .foregroundStyle(.purple)
+                .foregroundStyle(.red)
                 .padding(.trailing, 30.0)
                 .padding(.bottom, 100)
-                .background(.green)
+                .background(.blue)
             
             Text(stringyMcTextFace)
                 .font(.largeTitle)
@@ -49,7 +49,10 @@ struct ContentView: View {
                 }
                 .buttonStyle(.bordered)
             }
-            
+            Text("Version 3.0")
+                .bold()
+                .padding()
+                .foregroundColor(.red)
 
         }
         .padding()
