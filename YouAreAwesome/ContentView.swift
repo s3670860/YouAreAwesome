@@ -21,6 +21,8 @@ struct ContentView: View {
                 .padding(.bottom, 100)
                 .background(.blue)
             
+            Rectangle()
+                .foregroundColor(.green)
             Text(stringyMcTextFace)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -28,7 +30,6 @@ struct ContentView: View {
                 .italic()
                 .padding()
 //                .background(.black)
-            
             HStack {
                 Button("Awesome") {
     //                // This is the action performed when the button is pressed
