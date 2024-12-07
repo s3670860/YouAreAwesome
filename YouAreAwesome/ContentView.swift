@@ -138,6 +138,7 @@ struct ContentView: View {
                     //             create a border to assist with debugging
                     //                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .padding()
+                }
                     HStack {
                         Button("Awesome") {
                             //                     This is the action performed when the button is pressed
@@ -168,7 +169,7 @@ struct ContentView: View {
                 }
                 .padding()
                 
-            }
+            
             
             
         }
