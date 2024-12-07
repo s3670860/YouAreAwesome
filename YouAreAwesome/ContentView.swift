@@ -92,11 +92,16 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                         .background(Color.black)
                         .cornerRadius(8)
-                    //                {
-                    //                    userInput = "350"
-                    //                }
-                    //                .buttonStyle(.borderedProminent)
-                    //                .tint(Color("Vermillion"))
+                }
+                if !convertedTemperture.isEmpty {
+                    Text("Converted Temperature: \(convertedTemperture)")
+                        .font(.title2)
+                        .frame(height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            //  Add a second frame set to infinite width so text adapts to different screen size
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .padding()
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                }
                     Spacer()
                     
                     //                Text(tempCalculation)
@@ -116,11 +121,11 @@ struct ContentView: View {
                     
                     //                let myInt = Double(userInput) ?? 0
                     //                let calcValue = (myInt - 32) * (5/9)
-                    Button("Calculate") {
-                        //                    tempCalculation  = String(calcValue)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(Color("Sunset"))
+//                    Button("Calculate") {
+//                        //                    tempCalculation  = String(calcValue)
+//                    }
+//                    .buttonStyle(.borderedProminent)
+//                    .tint(Color("Sunset"))
                     Spacer()
                     
                     Text(stringyMcTextFace)
@@ -138,7 +143,7 @@ struct ContentView: View {
                     //             create a border to assist with debugging
                     //                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .padding()
-                }
+               
                     HStack {
                         Button("Awesome") {
                             //                     This is the action performed when the button is pressed
@@ -161,7 +166,7 @@ struct ContentView: View {
                     }
                     .tint(Color("Sunset"))
                     
-                    Text("Version 7.0")
+                    Text("Version 8.0")
                         .bold()
                     //                .padding()
                         .foregroundColor(.red)
@@ -186,7 +191,7 @@ struct ContentView: View {
             convertedTemperture = String(format: "%.2fºF", result)
         } else {
             let result = (inputTemp - 32) * 5/9
-            convertedTemperture = String(format: "%.2fºF", result)
+            convertedTemperture = String(format: "%.2fºC", result)
         }
     }
 }
