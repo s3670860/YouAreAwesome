@@ -43,38 +43,42 @@ struct ContentView: View {
             
             VStack(spacing: 20) {
                 
-                //        add parameter to the stack to make adjustments
-                
-                //        VStack (spacing: 0) {
-                
-                //                removed tutorial elements
-                
-                //            Image(systemName: "4.circle")
-                //                .resizable()
-                //                .scaledToFit()
-                //                            .imageScale(.large)
-                //                .foregroundStyle(.purple)
-                //                .padding(.trailing, 30.0)
-                //                .padding(.bottom, 100)
-                //                .background(.blue)
-                
-                //            Rectangle()
-                //                .foregroundColor(.purple)
-                //                .scaledToFit()
-                Text("Temperature Converter")
+//                        add parameter to the stack to make adjustments
+//                
+//                        VStack (spacing: 0) {
+//                
+//                                removed tutorial elements
+//                
+//                            Image(systemName: "4.circle")
+//                                .resizable()
+//                                .scaledToFit()
+//                                            .imageScale(.large)
+//                                .foregroundStyle(.purple)
+//                                .padding(.trailing, 30.0)
+//                                .padding(.bottom, 100)
+//                                .background(.blue)
+//                
+//                            Rectangle()
+//                                .foregroundColor(.purple)
+//                                .scaledToFit()
+                Text("Baba's Temperature Converter")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding()
-                //            using a color set created in a palette
+//                             create a frame so the buttons don't move when text appears
+                    .frame(height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                            Add a second frame set to infinite width so text adapts to different screen size
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.top)
+//                            using a color set created in a palette
                     .background(Color("Vermillion"))
                     .cornerRadius(15)
                 Spacer()
                 //                Input Field
                 TextField("Enter Temperture", text: $inputTemperature)
                     .keyboardType(.decimalPad)
-                    .background(Color("Lawn"))
+                    .background(Color.yellow)
                     .padding()
                     .cornerRadius(15)
                     .shadow(radius: 1)
@@ -104,23 +108,23 @@ struct ContentView: View {
                 }
                     Spacer()
                     
-                    //                Text(tempCalculation)
-                    //                    .font(.largeTitle)
-                    //                    .fontWeight(.heavy)
-                    //                    .minimumScaleFactor(0.5)
-                    //    //             center the text if on more than one line
-                    //                    .multilineTextAlignment(.center)
-                    //                    .foregroundColor(.red)
-                    //    //             create a frame so the buttons don't move when text appears
-                    //                    .frame(height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    //    //            Add a second frame set to infinite width so text adapts to different screen size
-                    //                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                    //    //             create a border to assist with debugging
-                    //                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    //                    .padding()
-                    
-                    //                let myInt = Double(userInput) ?? 0
-                    //                let calcValue = (myInt - 32) * (5/9)
+//                                    Text(tempCalculation)
+//                                        .font(.largeTitle)
+//                                        .fontWeight(.heavy)
+//                                        .minimumScaleFactor(0.5)
+//                        //             center the text if on more than one line
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(.red)
+//                        //             create a frame so the buttons don't move when text appears
+//                                        .frame(height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                        //            Add a second frame set to infinite width so text adapts to different screen size
+//                                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+//                        //             create a border to assist with debugging
+//                                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+//                                        .padding()
+//                    
+//                                    let myInt = Double(userInput) ?? 0
+//                                    let calcValue = (myInt - 32) * (5/9)
 //                    Button("Calculate") {
 //                        //                    tempCalculation  = String(calcValue)
 //                    }
