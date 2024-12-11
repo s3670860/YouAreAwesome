@@ -156,6 +156,8 @@ struct ContentView: View {
                     //             create a border to assist with debugging
                     //                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .padding()
+                    
+                    
                     Rectangle()
                         .fill(.black)
                         .frame(width: geometry.size.width * (2/3), height: 1)
@@ -197,9 +199,6 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            
-            
-            
             
         }
         
